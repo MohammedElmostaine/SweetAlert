@@ -1,10 +1,10 @@
 
 
-function sweetinfo(message) {
+function sweetinfo(message, info) {
     const bodyofalert = document.createElement("div");
-    bodyofalert.classList.add("sweetinfoSec");
+    bodyofalert.classList.add("sweetinfoSec", "sweetSec");
     bodyofalert.innerHTML = `<div class ="sweet" id="sweetinfo">
-                            <h1 class ="title" id = "infotitle">Info Alert</h1>
+                            <h1 class ="title" id = "infotitle">${info}</h1>
                             <p class ="Parag" id = "infoParag">${message}</p>
                             <i  id = "iconeCloseinfo" class="iconeClose fa-solid fa-circle-xmark" style="color: #000000; "></i>
                             <hr class="infohr">
@@ -13,12 +13,21 @@ function sweetinfo(message) {
     const body = document.querySelector("body");
     body.appendChild(bodyofalert);
     const iconeCloseinfo = document.querySelector("#iconeCloseinfo");
-    iconeCloseinfo.addEventListener("click", ()=> {
-        const sweetSec = document.querySelector(".sweetinfoSec"); 
-    if (sweetSec) {
-        sweetSec.remove();
-    }
+    const sweetSec = document.querySelector(".sweetinfoSec");
+
+    iconeCloseinfo.addEventListener("click", () => {
+        if (sweetSec) {
+            sweetSec.remove();
+        }
     })
+
+    setTimeout(() => {
+        if (sweetSec) {
+            sweetSec.remove();
+        }
+    }, 3000);
+
+
 }
 
 
@@ -30,7 +39,7 @@ function sweetinfo(message) {
 
 
 
-export { sweetinfo };
+export { sweetinfo, sweetSuccess };
 
 
 // <div class ="sweetSec" >

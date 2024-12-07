@@ -1,6 +1,6 @@
 *{
     width: 100%;
-    height: ;: 100%;
+    height:100%;
 }
 
 #btn1{
@@ -42,7 +42,7 @@
     border-radius: 20px;
 }
 
-.sweetinfoSec{
+.sweetSec{
     position: fixed;
     inset: 0;
     width: 100%;
@@ -54,44 +54,79 @@
     align-items: center;
 }
 
+/* .sweetinfoSec{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.6);
+    z-index: 100;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+} */
 
-#sweetinfo {
+
+.sweet{
     position: relative;
     display: flex;
-
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
     width: 500px;
+    height: 300px;
     background: white;
     min-height: 300px;
-    border: solid ;
+    /* border: solid  blue; */
     border-radius: 10px;
     padding: 20px;
-   
 }
-.iconeCloseinfo {
+
+#sweetinfo {
+    border: solid  blue;
+}
+
+#sweetSuccess {
+    border: solid  green;
+}
+i{
+    width: fit-content;
+    height: fit-content;
+}
+
+.sweet .iconeClose  {
     position: absolute;
     top: 10px;
-    right: -480px;
+    right: 10px;
     font-size: 30px;
     
 }
 
-#sweetinfo #infotitle{
+
+.title{
     font-size: x-large;
     font-weight: bold;
-    color: blue;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
-#sweetinfo #infoParag{
+ 
+#infotitle{
+    color: blue;
+}
+
+#Successtitle{
+    color: green;
+}
+
+.Parag{
     font-size: large;
     font-weight: bold;
     text-align: center;
-    
 }
-#sweetinfo .infohr{
-    border: 0px;
 
+
+
+hr{
+    border: 0px;
 }
