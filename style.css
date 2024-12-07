@@ -79,6 +79,9 @@
     border: solid  green;
 }
 
+#sweetWarning{
+    border: solid  orange;
+}
 
 i{
     width: fit-content;
@@ -111,6 +114,9 @@ i{
 }
 
 
+#Warningtitle{
+    color: orange;
+}
 
 .Parag{
     font-size: large;
