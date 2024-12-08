@@ -11,9 +11,11 @@ let Success="Success";
 let warningMessage = "This is a Warning Alert!";
 let warningTitle = "Warning";
 
-let insiMessage = "This is Info Alert";
+let infoMessage = "This is Info Alert";
+let infotitle = "Info"
+
 btn1.addEventListener("click", () => {
-    sweetinfo(insiMessage);
+    sweetinfo(infoMessage ,infotitle );
 });
 
 
